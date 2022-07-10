@@ -31,6 +31,6 @@ Nos fornece uma certa facilidade que por meio de alguns comandos como segue abai
   Execute este este comando para verificar se as imagens estão montadas e seu status<br/>
   
   Exemplo:
-  ![Exemplo do ambiente rodando](assets/images/image-ambiente-docker-compos-ps-a.png)
+  ![Exemplo do ambiente rodando](assets/images/ambiente-docker-compos-ps-a.png)
   
   
