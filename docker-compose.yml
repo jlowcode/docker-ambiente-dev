@@ -28,7 +28,6 @@ services:
 
 
   php-7.4-jdev:
-#    image: wyveo/nginx-php-fpm:php74
     build:
       context: .
       dockerfile: environment/php7.4/Dockerfile
