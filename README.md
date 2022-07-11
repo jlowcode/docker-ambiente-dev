@@ -7,7 +7,7 @@ Nos fornece uma certa facilidade que por meio de alguns comandos como segue abai
 
 **I M P O R T A N T E**
 - Não recomendo criar um clone deste repositorio, porque você ira criar um clone do projeto dentro da pasta html, e pode surgir conflitos ao tentar comitar os projetos.
-- Crie os arquivos individualmente seguindo os modelos aqui dispiveis.
+- Crie os arquivos individualmente seguindo os modelos aqui disponiveis.
 
 
 **PASSOS**
@@ -17,6 +17,15 @@ Nos fornece uma certa facilidade que por meio de alguns comandos como segue abai
 4) Crie um diretorio chamado **log** e dentro dentro outro diretorio chamado **nginx**. Este será responsável por armazenar os logs de erros do servidor web;
 5) Crie um diretório chamado **html** que será utilizado como volume para o codigo fonte do projeto que será desenvolvido.
 
+Exemplo:<br/>
+Diretório Principal<br/>
+|__ db<br/>
+|__ environment<br/>
+|   |__ php7.4<br/>
+|__ html<br/>
+|__ log<br/>
+|  |__ nginx<br/>
+|__ docker-compose.yml
 
 **INFORMAÇÕES IMPORTANTES**
 - Utilizando o terminal, acesse o diretorio que você criou os arquivos, e execute os seguintes comandos para preparar o ambiente
