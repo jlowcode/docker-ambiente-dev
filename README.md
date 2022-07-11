@@ -17,7 +17,7 @@ Nos fornece uma certa facilidade que por meio de alguns comandos como segue abai
 4) Crie um diretorio chamado **log** e dentro dentro outro diretorio chamado **nginx**. Este será responsável por armazenar os logs de erros do servidor web;
 5) Crie um diretório chamado **html** que será utilizado como volume para o codigo fonte do projeto que será desenvolvido.
 
-Exemplo:<br/>
+**Exemplo:**<br/>
 Diretório Principal<br/>
 |__ db<br/>
 |__ environment<br/>
@@ -26,7 +26,8 @@ Diretório Principal<br/>
 |__ log<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ nginx<br/>
 |__ docker-compose.yml
-
+<br/>
+<br/>
 **INFORMAÇÕES IMPORTANTES**
 - Utilizando o terminal, acesse o diretorio que você criou os arquivos, e execute os seguintes comandos para preparar o ambiente
 - No mesmo nível do arquivo docker-compose.yml digite:<br/><br/>
