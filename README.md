@@ -37,18 +37,29 @@ Nos fornece uma certa facilidade que por meio de alguns comandos como segue abai
   Será criado 3 containers<br/>
   **docker_mysql-jdev_1** <br/>
   -- Foi definido um IP: 172.20.0.10<br/>
-  -- [a link](https://github.com/jlowcode/docker-ambiente-dev/tree/main/documentation/mysql.md)
+  -- [Mais sobre MySQL](https://github.com/jlowcode/docker-ambiente-dev/tree/main/documentation/mysql.md)
 
   **docker_php-7.4-jdev_1**<br/>
   -- Foi definido um IP: 172.20.0.12<br/>
-  -- [a link](https://github.com/jlowcode/docker-ambiente-dev/tree/main/documentation/php74.md)
+  -- [Mais sobre PHP7.4](https://github.com/jlowcode/docker-ambiente-dev/tree/main/documentation/php74.md)
 
   **docker_phpmyadmin-jdev_1**<br/>
   -- Foi definido um IP: 172.20.0.11<br/>
-  -- [a link](https://github.com/jlowcode/docker-ambiente-dev/tree/main/documentation/phpmyadmin.md)
+  -- [Mais sobre phpMyAdmin](https://github.com/jlowcode/docker-ambiente-dev/tree/main/documentation/phpmyadmin.md)
 
   <br/>
   Comandos Importantes:<br/>
   - **docker-compose start:** Executa todos os container's<br/>
   - **docker-compose stop:** Parar a execução de todos os container's<br/>
   - **docker-compose down:** Não execute este comando, desde que realmente tenha certeza do que esta fazendo. Ele vai destruir todos os container's<br/>
+
+
+  Outras especificações e detalhes importantes para configurar e utilizar corretamente o ambiente dev com o docker
+  - [Mais sobre DBEaver](https://github.com/jlowcode/docker-ambiente-dev/tree/main/documentation/dbeaver.md)
+  - [Mais sobre HeidiSQL](https://github.com/jlowcode/docker-ambiente-dev/tree/main/documentation/heidisql.md)
+  - [Mais sobre GitHub](https://github.com/jlowcode/docker-ambiente-dev/tree/main/documentation/github.md)
+  - [Mais sobre MySQL](https://github.com/jlowcode/docker-ambiente-dev/tree/main/documentation/mysql.md)
+  - [Mais sobre PHP7.4](https://github.com/jlowcode/docker-ambiente-dev/tree/main/documentation/php74.md)
+  - [Mais sobre phpMyAdmin](https://github.com/jlowcode/docker-ambiente-dev/tree/main/documentation/phpmyadmin.md)
+  - [Mais sobre VSCode](https://github.com/jlowcode/docker-ambiente-dev/tree/main/documentation/vscode.md)
+  - [Mais sobre xDebug](https://github.com/jlowcode/docker-ambiente-dev/tree/main/documentation/xdebug.md)
