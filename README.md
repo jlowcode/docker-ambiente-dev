@@ -11,8 +11,8 @@ Nos fornece uma certa facilidade que por meio de alguns comandos como segue abai
 
 
 **PASSOS**
-1) Escolha o melhor diretorio que você ira montar seu ambiente, e crie o arquivo **docker-compose.yml** igual o aqui disponibilizado;
-2) Crie um diretorio chamado **environment** e dentro dele o diretorio **php7.4**, e por fim crie o arquivo **Dockerfile** conforme disponibilizado;
+1) Escolha o melhor diretorio que você ira montar seu ambiente, e crie o arquivo **docker-compose.yml** igual o aqui disponibilizado (Você precisa pegar o conteúdo do arquivo aqui no git e colar dentro do arquivo que você criou);
+2) Crie um diretorio chamado **environment** e dentro dele o diretorio **php7.4**, e por fim crie o arquivo **Dockerfile** conforme disponibilizado (Você precisa pegar o conteúdo do arquivo dockerfile aqui no git e colcar dentro do arquivo que você criou);
 3) Crie um diretorio chamado **db** que será utilizado como volume do banco de dados que iremos importar para desenvolvimento;
 4) Crie um diretorio chamado **log** e dentro dentro outro diretorio chamado **nginx**. Este será responsável por armazenar os logs de erros do servidor web;
 5) Crie um diretório chamado **html** que será utilizado como volume para o codigo fonte do projeto que será desenvolvido.
