@@ -21,10 +21,10 @@ Exemplo:<br/>
 Diretório Principal<br/>
 |__ db<br/>
 |__ environment<br/>
-     |__ php7.4<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ php7.4<br/>
 |__ html<br/>
 |__ log<br/>
-     |__ nginx<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ nginx<br/>
 |__ docker-compose.yml
 
 **INFORMAÇÕES IMPORTANTES**
