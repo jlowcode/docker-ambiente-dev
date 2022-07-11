@@ -28,9 +28,24 @@ Nos fornece uma certa facilidade que por meio de alguns comandos como segue abai
   Este comando vai subir as imagens, disponibilizando para uso<br/>
   
   $ **docker-compose ps -a**<br/>
-  Execute este este comando para verificar se as imagens estão montadas e seu status<br/>
+  Execute este este comando para verificar se as imagens estão montadas e os containers estão em execução e seus status<br/>
   
   Exemplo:
   ![Exemplo do ambiente rodando](assets/images/ambiente-docker-compos-ps-a.png)
+  <br/>
   
-  
+  Será criado 3 containers<br/>
+  **docker_mysql-jdev_1** <br/>
+  -- Foi definido um IP: 172.20.0.10<br/>
+
+  **docker_php-7.4-jdev_1**<br/>
+  -- Foi definido um IP: 172.20.0.12<br/>
+
+  **docker_phpmyadmin-jdev_1**<br/>
+  -- Foi definido um IP: 172.20.0.11<br/>
+
+  <br/>
+  Comandos Importantes:<br/>
+  - **docker-compose start:** Executa todos os container's<br/>
+  - **docker-compose stop:** Parar a execução de todos os container's<br/>
+  - **docker-compose down:** Não execute este comando, desde que realmente tenha certeza do que esta fazendo. Ele vai destruir todos os container's<br/>
