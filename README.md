@@ -6,16 +6,16 @@ Nos fornece uma certa facilidade que por meio de alguns comandos como segue abai
 
 
 **I M P O R T A N T E**
-- Não recomendo criar um clone deste repositorio, porque você ira criar um clone do projeto dentro da pasta html, e pode surgir conflitos ao tentar comitar os projetos.
-- Crie os arquivos individualmente seguindo os modelos aqui disponiveis.
+- Não recomendo criar um clone deste repositório, porque você irá criar um clone do projeto dentro da pasta html, e pode surgir conflitos ao tentar commitar os projetos.
+- Crie os arquivos individualmente seguindo os modelos aqui disponíveis.
 
 
 **PASSOS**
-1) Escolha o melhor diretorio que você ira montar seu ambiente, e crie o arquivo **docker-compose.yml** igual o aqui disponibilizado (Você precisa pegar o conteúdo do arquivo aqui no git e colar dentro do arquivo que você criou);
-2) Crie um diretorio chamado **environment** e dentro dele o diretorio **php7.4**, e por fim crie o arquivo **Dockerfile** conforme disponibilizado (Você precisa pegar o conteúdo do arquivo dockerfile aqui no git e colcar dentro do arquivo que você criou);
-3) Crie um diretorio chamado **db** que será utilizado como volume do banco de dados que iremos importar para desenvolvimento;
-4) Crie um diretorio chamado **log** e dentro dentro outro diretorio chamado **nginx**. Este será responsável por armazenar os logs de erros do servidor web;
-5) Crie um diretório chamado **html** que será utilizado como volume para o codigo fonte do projeto que será desenvolvido.
+1) Escolha o melhor diretório que você irá montar seu ambiente, e crie o arquivo **docker-compose.yml** igual o aqui disponibilizado (Você precisa pegar o conteúdo do arquivo aqui no git e colar dentro do arquivo que você criou);
+2) Crie um diretório chamado **environment** e dentro dele o diretório **php7.4**, e por fim crie o arquivo **Dockerfile** conforme disponibilizado (Você precisa pegar o conteúdo do arquivo dockerfile aqui no git e colocar dentro do arquivo que você criou);
+3) Crie um diretório chamado **db** que será utilizado como volume do banco de dados que iremos importar para desenvolvimento;
+4) Crie um diretório chamado **log** e dentro outro diretório chamado **nginx**. Este será responsável por armazenar os logs de erros do servidor web;
+5) Crie um diretório chamado **html** que será utilizado como volume para o código fonte do projeto que será desenvolvido.
 
 **Exemplo:**<br/>
 Diretório Principal<br/>
@@ -29,7 +29,7 @@ Diretório Principal<br/>
 <br/>
 <br/>
 **INFORMAÇÕES IMPORTANTES**
-- Utilizando o terminal, acesse o diretorio que você criou os arquivos, e execute os seguintes comandos para preparar o ambiente
+- Utilizando o terminal, acesse o diretório que você criou os arquivos, e execute os seguintes comandos para preparar o ambiente
 - No mesmo nível do arquivo docker-compose.yml digite:<br/><br/>
   $ **docker-compose build**<br/>
   Este comando tem como função verificar se os arquivo criados estão corretos, e preparar as imagens;<br/>
@@ -38,7 +38,7 @@ Diretório Principal<br/>
   Este comando vai subir as imagens, disponibilizando para uso<br/>
   
   $ **docker-compose ps -a**<br/>
-  Execute este este comando para verificar se as imagens estão montadas e os containers estão em execução e seus status<br/>
+  Execute este comando para verificar se as imagens estão montadas e os containers estão em execução e seus status<br/>
   
   Exemplo:
   ![Exemplo do ambiente rodando](assets/images/ambiente-docker-compos-ps-a.png)
@@ -58,10 +58,11 @@ Diretório Principal<br/>
   -- [Mais sobre phpMyAdmin](https://github.com/jlowcode/docker-ambiente-dev/tree/main/documentation/phpmyadmin.md)
 
   <br/>
+
   Comandos Importantes:<br/>
   - **docker-compose start:** Executa todos os container's<br/>
   - **docker-compose stop:** Parar a execução de todos os container's<br/>
-  - **docker-compose down:** Não execute este comando, desde que realmente tenha certeza do que esta fazendo. Ele vai destruir todos os container's<br/>
+  - **docker-compose down:** Não execute este comando, desde que realmente tenha certeza do que está fazendo. Ele vai destruir todos os container's<br/>
 
 
   Outras especificações e detalhes importantes para configurar e utilizar corretamente o ambiente dev com o docker
