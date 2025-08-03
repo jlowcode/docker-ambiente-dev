@@ -1,53 +1,47 @@
-version: '3.5'
+version: '3'
 
 services:
-  mysql-jdev:
-    image: mysql
-    ports:
-      - 6033:3306
-    environment:
-      MYSQL_ROOT_PASSWORD: 123123
-      MYSQL_DATABASE: admin
-    volumes:
-      - ./db:/docker-entrypoint-initdb.d/
-    networks:
-      customnetwork:
-        ipv4_address: 172.20.0.10
-
-
-  phpmyadmin-jdev:
-      image: phpmyadmin
-      restart: always
-      ports:
-        - 8082:80
-      environment:
-        - PMA_ARBITRARY=1
-      networks:
-        customnetwork:
-          ipv4_address: 172.20.0.11
-
-
-  php-7.4-jdev:
+  web:
     build:
-      context: .
-      dockerfile: environment/php7.4/Dockerfile
+      context: ./environment/php8.1
     ports:
-      - 8888:80
+      - "80:80"
     volumes:
-      - ./log/nginx:/var/log/nginx
-      - ./html:/usr/share/nginx/html
-
-    depends_on:
-      - mysql-jdev
-      - phpmyadmin-jdev
-
+      - ./html:/var/www/html
     networks:
       customnetwork:
-        ipv4_address: 172.20.0.12
+        ipv4_address: 182.20.0.12
 
+  db:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: admin123123
+      MYSQL_DATABASE: devcett
+      MYSQL_USER: admin         
+      MYSQL_PASSWORD: admin123123
+    volumes:
+      - ./mysql-init:/docker-entrypoint-initdb.d
+    networks:
+      customnetwork:
+        ipv4_address: 182.20.0.11
+  
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8080:8080"
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: admin123123
+      PMA_USER: admin
+      PMA_PASSWORD: admin123123
+    networks:
+      customnetwork:
+        ipv4_address: 182.20.0.13
 
 networks:
   customnetwork:
     ipam:
       config:
-        - subnet: 172.20.0.0/16
+        - subnet: 182.20.0.0/16
